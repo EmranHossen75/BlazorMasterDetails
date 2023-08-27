@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\01604d93-f677-4d05-b89d-9a24a0d3e605.jpg",
+      "PackagePath": "staticwebassets\\Images\\01604d93-f677-4d05-b89d-9a24a0d3e605.jpg"
+    },
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\0b72e3d0-edec-4ef8-a075-6dee9d791071.jpg",
+      "PackagePath": "staticwebassets\\Images\\0b72e3d0-edec-4ef8-a075-6dee9d791071.jpg"
+    },
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\3f83b4b2-ec59-4bbd-8d0b-80a24b1fcf01.jpg",
+      "PackagePath": "staticwebassets\\Images\\3f83b4b2-ec59-4bbd-8d0b-80a24b1fcf01.jpg"
+    },
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\59dda816-9cf0-42f2-a0bf-3d9d6bae3126.jpeg",
+      "PackagePath": "staticwebassets\\Images\\59dda816-9cf0-42f2-a0bf-3d9d6bae3126.jpeg"
+    },
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\5ed4d95c-095a-43ba-bb20-244a520dbc57.jpg",
+      "PackagePath": "staticwebassets\\Images\\5ed4d95c-095a-43ba-bb20-244a520dbc57.jpg"
+    },
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\6dd2cc81-708d-4a09-bce2-86804211fde3.jpg",
+      "PackagePath": "staticwebassets\\Images\\6dd2cc81-708d-4a09-bce2-86804211fde3.jpg"
+    },
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\c091b642-a251-4251-9872-63f79f18877f.jpg",
+      "PackagePath": "staticwebassets\\Images\\c091b642-a251-4251-9872-63f79f18877f.jpg"
+    },
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\dee6516d-0f72-4c2e-a663-18ae2ca66423.jpg",
+      "PackagePath": "staticwebassets\\Images\\dee6516d-0f72-4c2e-a663-18ae2ca66423.jpg"
+    },
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\default.jpg",
+      "PackagePath": "staticwebassets\\Images\\default.jpg"
+    },
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\dfc3b9cd-7bdd-46fa-bf49-2272179b034d.jpg",
+      "PackagePath": "staticwebassets\\Images\\dfc3b9cd-7bdd-46fa-bf49-2272179b034d.jpg"
+    },
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\e7fba539-d3cc-4e6a-9333-3cbfeda6ba06.jpg",
+      "PackagePath": "staticwebassets\\Images\\e7fba539-d3cc-4e6a-9333-3cbfeda6ba06.jpg"
+    },
+    {
+      "Id": "D:\\c#-class\\Blazor\\Class_009_MasterDetails_2\\ESAD_CS_R53_M014_D008\\work_001\\Server\\wwwroot\\Images\\loading.gif",
+      "PackagePath": "staticwebassets\\Images\\loading.gif"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.work_001.Server.props",
+      "PackagePath": "build\\work_001.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.work_001.Server.props",
+      "PackagePath": "buildMultiTargeting\\work_001.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.work_001.Server.props",
+      "PackagePath": "buildTransitive\\work_001.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.work_001.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

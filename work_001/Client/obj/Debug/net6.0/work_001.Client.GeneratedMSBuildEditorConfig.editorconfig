@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = work_001.Client
+build_property.RootNamespace = work_001.Client
+build_property.ProjectDir = D:\c#-class\Blazor\Class_009_MasterDetails_2\ESAD_CS_R53_M014_D008\work_001\Client\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\c#-class\Blazor\Class_009_MasterDetails_2\ESAD_CS_R53_M014_D008\work_001\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/Pages/MasterDetails/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFzdGVyRGV0YWlsc1xDcmVhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/Pages/MasterDetails/CustomerForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFzdGVyRGV0YWlsc1xDdXN0b21lckZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/Pages/MasterDetails/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFzdGVyRGV0YWlsc1xFZGl0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/Pages/MasterDetails/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFzdGVyRGV0YWlsc1xJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-bzehrdi9iz
+
+[D:/c\#-class/Blazor/Class_009_MasterDetails_2/ESAD_CS_R53_M014_D008/work_001/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-2a8h2it253

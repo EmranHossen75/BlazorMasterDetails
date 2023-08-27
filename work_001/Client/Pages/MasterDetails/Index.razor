@@ -1,0 +1,91 @@
+﻿@page "/index"
+@using work_001.Shared;
+@inject HttpClient http;
+@inject NavigationManager navigationManager
+
+<h3 class="display-4">Master Details</h3>
+<div class="d-flex justify-content-end">
+    <a class="btn btn-primary btn-sm" href="/create">Add New</a>
+</div>
+
+@if (customers is null)
+{
+    <div class="d-flex justify-content-center mt-5">
+        <img src="/Images/loading.gif" />
+    </div>
+}
+@if (customers is not null)
+{
+    @foreach (var customer in customers)
+    {
+        <div class="card">
+            <div class="card-header d-flex justify-content-between">
+                <div>
+                    <img src="/Images/@customer.Picture" width="32" class="mr-2" />
+                    Name: @customer.CustomerName
+                    Birth Date: @customer.BirthDate
+                    Phone: @customer.Phone
+                    Marital Status:@if (customer.MaritalStatus)
+                    {
+                        <span>Married</span>
+                    }
+                    else
+                    {
+                        <span>UnMarried</span>
+                    }
+
+                  
+                </div>
+                <div>
+                    <a class="btn btn-success btn-sm" href="customer/edit/@customer.CustomerId">Edit</a>
+                     <a class="btn btn-danger btn-sm" @onclick="@(()=> Delete(customer.CustomerId))">Delete</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped table-sm">
+                    <thead>
+                        <tr>
+                            <th>SpotId</th>
+                            <th>SpotName</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var singleEntry in customer.BookingEntries)
+                        {
+                            <tr>
+                                <td>@singleEntry.SpotId</td>
+                                <td>@singleEntry.Spot.SpotName</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+}
+@code {
+    List<Customer> customers { get; set; }
+    private Customer customer = new Customer { MaritalStatus = true };
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+    async Task LoadData()
+    {
+        customers = await http.GetFromJsonAsync<List<Customer>>("api/MasterDetails/GetCustomers");
+    }
+    async Task Delete(int customerId)
+    {
+        var response = await http.DeleteAsync($"api/MasterDetails/{customerId}");
+        if (response.IsSuccessStatusCode)
+        {
+            customers.RemoveAll(c => c.CustomerId == customerId);
+            StateHasChanged();
+        }
+        else
+        {
+            Console.WriteLine(await response.Content.ReadAsStringAsync());
+        }
+    }
+}

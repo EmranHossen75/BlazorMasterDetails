@@ -1,0 +1,93 @@
+﻿@using work_001.Shared
+<h3 class="display-4">Customer Form</h3>
+<EditForm Model="customer" OnValidSubmit="OnValidSubmit" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-6">
+            <input type="hidden" @bind="@customer.CustomerId" />
+            <div class="row mb-1">
+                <label class="col-form-label col-4">Name</label>
+                <div class="col-8">
+                    <InputText class="form-control" id="name" @bind-Value="@customer.CustomerName" />
+                </div>
+            </div>
+            <div class="row mb-1">
+                <label class="col-form-label col-4">Date of Birth</label>
+                <div class="col-8">
+                    <InputDate class="form-control" id="birthDate" @bind-Value="@customer.BirthDate" />
+                </div>
+            </div>
+            <div class="row mb-1">
+                <label class="col-form-label col-4">Phone</label>
+                <div class="col-8">
+                    <InputNumber class="form-control" id="phone" @bind-Value="@customer.Phone" />
+                </div>
+            </div>
+            <div class="row mb-1">
+                <label class="col-form-label col-4">Picture</label>
+                <div class="col-8">
+                    <InputFile class="form-control" OnChange="HandleFileSelection" />
+                </div>
+            </div>
+            <div class="row mb-1">
+                <label class="col-form-label col-4">Married</label>
+                <div class="col-8">
+                    <InputCheckbox class="form-check-input" id="marutalStatus" @bind-Value="@customer.MaritalStatus" />
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-10 offset-4">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <h2>Select Spot</h2>
+            <div class="d-flex justify-content-end">
+                <button type="button" @onclick="(()=>customer.SpotList.Add(new Spot()))" class="btn btn-primary btn-sm">Add More</button>
+            </div>
+
+            <div class="spotContainer">
+                @for (int i = 0; i < customer.SpotList.Count; i++)
+                {
+                    int index = i;
+                    <div class="row mb-1 mt-2">
+                        <div class="col-10">
+                            <InputSelect @bind-Value="@customer.SpotList[index].SpotId" class="form-select">
+                                @if (tourSpots is not null)
+                                {
+                                    <option value="0">---Select---</option>
+                                    @foreach (var spot in tourSpots)
+                                    {
+                                        <option value="@spot.SpotId">@spot.SpotName</option>
+                                    }
+                                }
+                            </InputSelect>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" @onclick="@(()=>customer.SpotList.RemoveAt(index))" class="btn btn-danger btn-sm">Remove</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    
+</EditForm>
+
+@code {
+    [Parameter] public CustomerVM customer { get; set; }
+    [Parameter] public List<Spot> tourSpots { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+    [Parameter] public EventCallback<IBrowserFile> SelectedFileChanged { get; set; }
+
+    public IBrowserFile selectedFile { get; set; }
+
+    public async Task HandleFileSelection(InputFileChangeEventArgs e)
+    {
+        if (e.File is not null)
+        {
+            selectedFile = e.File;
+            await SelectedFileChanged.InvokeAsync(selectedFile);
+        }
+    }
+}
